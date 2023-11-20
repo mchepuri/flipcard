@@ -1,6 +1,6 @@
 import React from 'react';
 import './flipcard.css';
-export function FlipCard() {
+export function FlipCard(props) {
   return (
     <div className="card_container">
         <div className="card">
