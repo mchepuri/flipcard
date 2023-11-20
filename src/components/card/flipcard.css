@@ -1,0 +1,35 @@
+.card_container {
+    height: 360px;
+    width: 480px;
+    perspective: 800px;
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2000ms;
+    border: 1px solid #9b9898;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+  
+  .image {
+    object-fit: cover;
+  }
