@@ -3,7 +3,7 @@ import './flipcard.css';
 export function FlipCard(props) {
   return (
     <div className="card_container">
-        <div className="card">
+        <div id="card" className="card">
             <div className="front">
                 {props.children[0]}
             </div>

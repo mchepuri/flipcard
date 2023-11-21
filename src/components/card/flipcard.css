@@ -1,7 +1,8 @@
 .card_container {
-    height: 360px;
-    width: 480px;
+    height: 400px;
+    width: 370px;
     perspective: 800px;
+
   }
   
   .card {
@@ -9,13 +10,14 @@
     width: 100%;
     position: relative;
     transition: transform 2000ms;
-    border: 1px solid #9b9898;
+    border: 2px solid #e6e4e4;
     transform-style: preserve-3d;
+    border-radius: 10px;
+
   }
   
-  .card:hover {
-    cursor: pointer;
-    transform: rotateY(180deg) rotateZ(180deg);
+  .showback {
+    transform: rotateY(180deg) ;
   }
   
   .front,
@@ -24,12 +26,10 @@
     width: 100%;
     position: absolute;
     backface-visibility: hidden;
+    background-color: #ffffff;
   }
   
   .back {
-    transform: rotateY(180deg) rotateZ(180deg);
+    transform: rotateY(180deg) ;
   }
   
-  .image {
-    object-fit: cover;
-  }
